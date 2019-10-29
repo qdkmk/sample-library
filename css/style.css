@@ -1,0 +1,110 @@
+body{
+  text-align: center;
+}
+.header{
+  background-color: #e7488a;
+  height: 100vh;
+}
+.wrapper{
+  width: 80%;
+  margin: auto;
+}
+.js-animation{
+  transform: matrix(0.8,0,0,0.8,0,50);
+  transition: all 0.35s cubic-bezier(1,2.02,.94,.69);
+}
+.is-show{
+  transform: matrix(1,0,0,1,0,0);
+}
+
+.rotate-animation {
+    display: inline-block;
+}
+.rotate-animation:hover{
+  animation: rotate 1.5s  infinite;
+}
+
+@keyframes rotate {
+    25% {transform: rotateZ(10deg)}
+    50% {transform: rotateZ(0deg)}
+    75% {transform:  rotateZ(-10deg)}
+}
+
+/*section*/
+.section-title{
+  font-size: 4rem;
+}
+.section-sub-text{
+  width: 300px;
+  margin: auto;
+}
+
+/*section service*/
+.service-contents{
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-right{
+  float: right;
+  width: 45%;
+}
+.service-left{
+  float: left;
+  width: 45%;
+}
+.service-visual{
+  display: flex;
+  align-items: center;
+}
+.svg{
+  display: block;
+  margin: auto;
+}
+.service-description{
+  display: block;
+  text-align: left; 
+  margin: auto;
+}
+
+.service-title{
+  font-size: 2.5rem;
+}
+.section-text{
+  width: 80%;
+}
+
+/*section event*/
+.section-event{
+  
+}
+.event-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.event-contents{
+  width: 30%;
+}
+.event-visual img{
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  180px;       /* ※縦横を同値に */
+    height: 180px;
+}
+
+/*section web*/
+.section-web{
+  
+}
+.web-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.web-contents{
+  width: 45%;
+}
+.web-visual img{
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  180px;       /* ※縦横を同値に */
+    height: 180px;
+}
