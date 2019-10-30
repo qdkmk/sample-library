@@ -11,15 +11,8 @@ body {
   text-align: center; }
 
 a {
-  text-decoration: none; }
-  a:link {
-    color: #ffffff; }
-  a:visited {
-    color: #ffffff; }
-  a:active {
-    color: #ffffff; }
-  a:hover {
-    color: #ffffff; }
+  text-decoration: none;
+  color: #333; }
 
 .header {
   background-color: #e7488a;
@@ -30,20 +23,25 @@ a {
     top: 50%;
     right: 50%;
     transform: translateX(50%) translateY(-50%); }
+    .header .header-content a {
+      color: #fff; }
     .header .header-content h1.logo {
       color: #fff; }
       @media screen and (min-width: 360px) {
         .header .header-content h1.logo {
           font-size: 4rem;
-          line-height: 6rem; } }
+          line-height: 4.5rem;
+          margin-bottom: 1rem; } }
       @media screen and (min-width: 768px) {
         .header .header-content h1.logo {
           font-size: 5rem;
-          line-height: 7rem; } }
+          line-height: 5.5rem;
+          margin-bottom: 2rem; } }
       @media screen and (min-width: 1000px) {
         .header .header-content h1.logo {
           font-size: 6rem;
-          line-height: 9rem; } }
+          line-height: 7rem;
+          margin-bottom: 3rem; } }
     .header .header-content nav {
       width: 100%; }
       .header .header-content nav ul {
@@ -261,7 +259,7 @@ hr.dashed {
   @media screen and (min-width: 360px) {
     .event-wrapper .event-contents {
       width: 80%;
-      margin: auto; } }
+      margin: 1.5rem auto; } }
   @media screen and (min-width: 768px) {
     .event-wrapper .event-contents {
       width: 30%; } }

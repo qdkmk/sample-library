@@ -65,25 +65,11 @@ body {
 
 a {
   text-decoration: none;
-
-  &:link {
-    color: #ffffff;
-  }
-
-  &:visited {
-    color: #ffffff;
-  }
-
-  &:active {
-    color: #ffffff;
-  }
-
-  &:hover {
-    color: #ffffff;
-  }
+  color: #333;
 }
 
 .header {
+
   background-color: $theme-color;
   height: 100vh;
   position: relative;
@@ -93,20 +79,25 @@ a {
     top: 50%;
     right: 50%;
     transform: translateX(50%) translateY(-50%);
-
+    a {
+      color: #fff;
+    }
     h1.logo {
       color: #fff;
       @include mq(sm) {
         font-size: 4rem;
-        line-height: 6rem;
+        line-height: 4.5rem;
+        margin-bottom: 1rem;
       };
       @include mq(md) {
         font-size: 5rem;
-        line-height: 7rem;
+        line-height: 5.5rem;
+        margin-bottom: 2rem;
       };
       @include mq(lg) {
         font-size: 6rem;
-        line-height: 9rem;
+        line-height: 7rem;
+        margin-bottom: 3rem;
       };
     }
 
@@ -351,7 +342,7 @@ hr.dashed {
   .event-contents {
     @include mq(sm) {
       width: 80%;  
-      margin: auto;
+      margin: 1.5rem auto;
     };
     @include mq(md) {
       width: 30%;  
