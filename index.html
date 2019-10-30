@@ -4,90 +4,103 @@
 <head>
   <meta charset="UTF-8">
   <title>図書館</title>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.nested.css">
   <script src="js/script.js"></script>
 </head>
 
 <body>
   <header class="header">
+    <div class="header-content">
     <h1 class="logo">
       <a href="">LIBRARY</a>
     </h1>
     <nav>
       <ul>
-        <li class="rotate-animation">
-          <img src="./images/readbook.svg" width="128" height="128">
+        <li class="rotate-animation nav-svg" id="nav-svg1">
+          <a href="#service">
+          <img src="./images/book.svg" width="70%" height="100%">
           <p>SERVICE</p>
+          </a>
         </li>
-        <li class="rotate-animation">
-          <img src="./images/pen-hand.svg" width="128" height="128">
+        <li class="rotate-animation nav-svg" id="nav-svg2">
+          <a href="#event">
+          <img src="./images/pen-hand.svg" width="100%" height="100%">
           <p>EVENT</p>
+          </a>
         </li>
-        <li class="rotate-animation">
-          <img src="./images/pc.svg" width="128" height="128">
+        <li class="rotate-animation nav-svg" id="nav-svg3">
+          <a href="#web">
+          <img src="./images/pc.svg" width="100%" height="100%">
           <p>WEB</p>
+          </a>
         </li>
-        <li class="rotate-animation">
-          <img src="./images/megane.svg" width="128" height="128">
+        <li class="rotate-animation nav-svg" id="nav-svg4">
+          <a href="#speceal">
+          <img src="./images/megane.svg" width="100%" height="100%">
           <p>SPECIAL</p>
+          </a>
         </li>
-        <li class="rotate-animation">
-          <img src="./images/note.svg" width="128" height="128">
+        <li class="rotate-animation nav-svg" id="nav-svg5">
+          <a href="#more">
+          <img src="./images/note.svg" width="100%" height="100%">
           <p>MORE</p>
+          </a>
         </li>
       </ul>
     </nav>
+    </div>
   </header>
 
   <div class="wrapper">
     <div class="main">
-      <div class="section">
-        <div class="sectin-top js-animation">
+      <div class="section" id="service">
+        <div class="sectin-top-wrapper js-animation">
           <h2 class="section-title">SERVICE</h2>
-          <img src="./images/circle.svg" width="128" height="32">
+          <img class="svg-circle"  src="./images/circle.svg" width="128" height="32">
           <p class="section-sub-title">日本全国に3296箇所！</p>
           <p class="section-sub-text">ご利用はもちろん無料。閲覧スペース、キッズスペース完備の図書館も!子どもから大人まで年齢関係なく楽しめます。</p>
         </div>
 
         <div class="service-contents js-animation">
           <div class="service-visual service-left">
-            <img class="svg" src="./images/book.svg" width="60%" height="60%">
+            <img class="svg" src="./images/readbook.svg" width="70%" height="70%">
           </div>
           <div class="service-description service-right">
             <h2 class="service-title">1.Volume</h2>
             <p class="service-sub-title">全国で4億冊以上の蔵書</p>
-            <p class="section-text">資料の貸し出しはおおむねどの館も週6日受け付け、返却は毎日受け付けています！土曜・日曜日・祝日稼働している館が多数。</p>
+            <p class="service-text">資料の貸し出しはおおむねどの館も週6日受け付け、返却は毎日受け付けています！土曜・日曜日・祝日稼働している館が多数。</p>
           </div>
         </div>
 
         <div class="service-contents js-animation">
+          <div class="service-visual service-right">
+            <img class="svg" src="./images/musimegane.svg" width="70%" height="70%">
+          </div>
           <div class="service-description service-left">
             <h2 class="service-title">2.Reference</h2>
             <p class="service-sub-title">本選びも資料探索も！</p>
-            <p class="section-text">「3歳児向けの絵本を探している」「郷土の歴史を調べたい」「昔の教科書を見てみたい」「あのアニメキャラの服装の柄はなんていう柄？」etc...資料探索のプロがお手伝いします</p>
-          </div>
-          <div class="service-visual service-right">
-            <img class="svg" src="./images/musimegane.svg" width="60%" height="60%">
+            <p class="service-text">「3歳児向けの絵本を探している」「郷土の歴史を調べたい」「昔の教科書を見てみたい」「あのアニメキャラの服装の柄はなんていう柄？」etc...資料探索のプロがお手伝いします</p>
           </div>
         </div>
         <div class="service-contents js-animation">
           <div class="service-visual service-left">
-            <img class="svg" src="./images/network.svg" width="60%" height="60%">
+            <img class="svg" src="./images/network.svg" width="70%" height="70%">
           </div>
           <div class="service-description service-right">
             <h2 class="service-title">3.Network</h2>
             <p class="service-sub-title">図書館相互の貸し出しも</p>
-            <p class="section-text">「読みたい本がアクセスできる図書館にない」そんな場合も蔵書している他の図書館があなたの地域の図書館へ貸し出しを行うことができるケースも！全国の図書館は協力して大きなネットワークを作っています！</p>
+            <p class="service-text">「読みたい本がアクセスできる図書館にない」そんな場合も蔵書している他の図書館があなたの地域の図書館へ貸し出しを行うことができるケースも！全国の図書館は協力して大きなネットワークを作っています！</p>
           </div>
         </div>
       </div>
       <!--section1-->
-      <div class="section section-event">
-        <div class="sectin-top js-animation">
+      
+      <div class="section section-event" id="event">
+        <div class="sectin-top-wrapper js-animation">
           <h2 class="section-title">EVENT</h2>
-          <img src="./images/circle.svg" width="128" height="32">
+          <img class="svg-circle"  src="./images/circle-white.svg" width="128" height="32">
           <p class="section-sub-title">図書館ごとの取り組み</p>
           <p class="section-sub-text">図書の貸し出し以外にも、図書館ごとにより様々なイベントやサービスを行っています。</p>
         </div>
@@ -123,16 +136,16 @@
         </div>
       </div>
       <!--section2-->
-      <div class="section section-web">
-        <div class="sectin-top js-animation">
+      <div class="section section-web" id="web">
+        <div class="sectin-top-wrapper js-animation">
           <h2 class="section-title">WEB</h2>
-          <img src="./images/circle.svg" width="128" height="32">
+          <img class="svg-circle"  src="./images/circle.svg" width="128" height="32">
           <p class="section-sub-title">Web上サービス</p>
-          <p class="section-sub-text">ウェブ サ イト も 充 実！実際に足を運んだことがない方も覗いてみてくださいね。</p>
+          <p class="section-sub-text">ウェブサイトも充実！実際に足を運んだことがない方も覗いてみてくださいね。</p>
         </div>
 
         <div class="web-wrapper">
-          <div class="web-contents js-animation">
+          <div class="web-contents js-animation gray">
             <div class="web-visual">
               <img src="./images/kv-bg.jpg">
             </div>
@@ -141,7 +154,7 @@
               <p class="web-text">「近隣に大きな図書館はあったかな？」「あの本はどこの図書館ならあるかな？」など全国や都道府県・地域を絞った検索が可能なサービスです。</p>
             </div>
           </div>
-          <div class="web-contents js-animation">
+          <div class="web-contents js-animation light-gray">
             <div class="web-visual js-animation">
               <img src="./images/kv-bg.jpg">
             </div>
@@ -150,7 +163,7 @@
               <p class="web-text">あなたの町の図書館にもきっと公式ウェブサイトがあるはず！図書館の蔵書検索や各種イベント情報や新刊情報などを発信しています。</p>
             </div>
           </div>
-          <div class="web-contents js-animation">
+          <div class="web-contents js-animation light-gray">
             <div class="web-visual js-animation">
               <img src="./images/kv-bg.jpg">
             </div>
@@ -159,7 +172,7 @@
               <p class="web-text">日本全国の協力図書館がお答えした様々なレファレンス事例が検索できます。</p>
             </div>
           </div>
-          <div class="web-contents js-animation">
+          <div class="web-contents js-animation gray">
             <div class="web-visual js-animation">
               <img src="./images/kv-bg.jpg">
             </div>
@@ -171,64 +184,86 @@
         </div>
       </div>
       <!--section3-->
-      <div class="section section-event">
-        <div class="sectin-top js-animation">
+      <div class="section section-special" id="special">
+        <div class="sectin-top-wrapper js-animation">
           <h2 class="section-title">SPECIAL</h2>
-          <img src="./images/circle.svg" width="128" height="32">
+          <img class="svg-circle"  src="./images/circle-white.svg" width="128" height="32">
           <p class="section-sub-title">専門図書館</p>
           <p class="section-sub-text">医療、郷土、印刷、映画、防災、天文学、建設...様々なジャンルの専門図書館があります。</p>
         </div>
 
-        <div class="event-wrapper">
-          <div class="event-contents js-animation">
-            <div class="event-visual">
+        <div class="special-wrapper">
+          <div class="special-contents js-animation">
+            <div class="special-visual">
               <img src="./images/kv-bg.jpg">
             </div>
-            <div class="event-description">
-              <h4 class="event-title">インターネット</h4>
-              <p class="event-text">スマホの小さい画面ではなくパソコンで見たいとき、スマホの小さい画面ではなくパソコンで見たいとき。</p>
+            <div class="special-description">
+              <h4 class="special-title">インターネット</h4>
+              <p class="special-text">スマホの小さい画面ではなくパソコンで見たいとき、スマホの小さい画面ではなくパソコンで見たいとき。</p>
             </div>
           </div>
-          <div class="event-contents js-animation">
-            <div class="event-visual js-animation">
+          <div class="special-contents js-animation">
+            <div class="special-visual js-animation">
               <img src="./images/kv-bg.jpg">
             </div>
-            <div class="event-description">
-              <h4 class="event-title">読み聞かせ</h4>
-              <p class="event-text">スマホの小さい画面ではなくパソコンで見たいとき、スマホの小さい画面ではなくパソコンで見たいとき。</p>
+            <div class="special-description">
+              <h4 class="special-title">読み聞かせ</h4>
+              <p class="special-text">スマホの小さい画面ではなくパソコンで見たいとき、スマホの小さい画面ではなくパソコンで見たいとき。</p>
             </div>
           </div>
+          
+          <div class="special-contents js-animation">
+            <div class="special-visual js-animation"><img src="./images/kv-bg.jpg"></div>
+            <div class="special-description"><h4 class="special-title">読み聞かせ</h4><p class="special-text">スマホの小さい画面ではなくパソコンで見たいとき、スマホの小さい画面ではなくパソコンで見たいとき。</p></div>
+          </div>
+          <div class="special-contents js-animation">
+            <div class="special-visual js-animation"><img src="./images/kv-bg.jpg"></div>
+            <div class="special-description"><h4 class="special-title">読み聞かせ</h4><p class="special-text">スマホの小さい画面ではなくパソコンで見たいとき、スマホの小さい画面ではなくパソコンで見たいとき。</p></div>
+          </div>
+          <div class="special-contents js-animation">
+            <div class="special-visual js-animation"><img src="./images/kv-bg.jpg"></div>
+            <div class="special-description"><h4 class="special-title">読み聞かせ</h4><p class="special-text">スマホの小さい画面ではなくパソコンで見たいとき、スマホの小さい画面ではなくパソコンで見たいとき。</p></div>
+          </div>
+          <div class="special-contents js-animation">
+            <div class="special-visual js-animation"><img src="./images/kv-bg.jpg"></div>
+            <div class="special-description"><h4 class="special-title">読み聞かせ</h4><p class="special-text">スマホの小さい画面ではなくパソコンで見たいとき、スマホの小さい画面ではなくパソコンで見たいとき。</p></div>
+          </div>      
         </div>
+          <div class="special-more">
+            <a href="#">
+            <p>専門図書館の一覧はこちら(カーリル)</p>
+          </a>
+          </div>
       </div>
       <!--section4-->
-      <div class="section section-event">
-        <div class="sectin-top js-animation">
+      <div class="section section-more" id="more">
+        <div class="sectin-top-wrapper js-animation">
           <h2 class="section-title">MORE</h2>
-          <img src="./images/circle.svg" width="128" height="32">
+          <img class="svg-circle"  src="./images/circle.svg" width="128" height="32">
           <p class="section-sub-title">ここからはじめる</p>
           <p class="section-sub-text">ファッションや絵画、映画など、興味のあるジャンルはあるけれど、どこからはじめれば....という方へ</p>
         </div>
 
-        <div class="special-contents-top">
+        <div class="more-contents-top">
           <p>今すぐ使えるwebcat plusの連想検索またはReftika(拙作)がおすすめ！「モード」「アヴァンギャルド」「ドキュメンタリー」「ディスプレイ」「広告」など思いついた単語や文章を入力してみてください！きっと新しい本や資料との出会いが世界を少しだけ広げてくれます。</p>
         </div>
-        <div class="event-wrapper">
-          <div class="event-contents js-animation">
-            <div class="event-visual">
+        <div class="more-wrapper">
+          <div class="more-contents js-animation">
+            <div class="more-visual">
               <img src="./images/kv-bg.jpg">
             </div>
-            <div class="event-description">
-              <h4 class="event-title">webcat plus連想検索</h4>
-              <p class="event-text">スマホの小さい画面ではなくパソコンで見たいとき、スマホの小さい画面ではなくパソコンで見たいとき。</p>
+            <div class="more-description">
+              <h4 class="more-title">webcat plus連想検索</h4>
+              <p class="more-text">スマホの小さい画面ではなくパソコンで見たいとき、スマホの小さい画面ではなくパソコンで見たいとき。</p>
             </div>
           </div>
-          <div class="event-contents js-animation">
-            <div class="event-visual js-animation">
+          <div class="more-contents js-animation">
+            <div class="more-visual js-animation">
               <img src="./images/kv-bg.jpg">
             </div>
-            <div class="event-description">
-              <h4 class="event-title">Reftika</h4>
-              <p class="event-text">スマホの小さい画面ではなくパソコンで見たいとき、スマホの小さい画面ではなくパソコンで見たいとき。</p>
+            <div class="more-description">
+              <h4 class="more-title">Reftika</h4>
+              <p class="more-text">スマホの小さい画面ではなくパソコンで見たいとき、スマホの小さい画面ではなくパソコンで見たいとき。</p>
             </div>
           </div>
         </div>
