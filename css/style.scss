@@ -109,6 +109,7 @@ a {
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
+        letter-spacing: 0.1rem;
 
         .nav-svg {
           float: left;
@@ -215,6 +216,7 @@ hr.dashed {
 }
 /*section service*/
 .service-contents {
+
   @include mq(sm) {
     margin: 2rem;
   };
@@ -225,6 +227,7 @@ hr.dashed {
   @include mq(lg) {
     display: flex;
     justify-content: space-between;
+
   };
 
   .service-right {
@@ -271,7 +274,7 @@ hr.dashed {
     display: block;
     margin: auto;
 
-    .service-title {
+    h2.service-title {
       @include mq(sm) {
         @include sm-title
       };
@@ -644,4 +647,10 @@ hr.dashed {
       }
     }
   }
+}
+/*footer*/
+footer{
+  background-color: $theme-color;
+  padding: 0.5rem;
+  color: #fff;
 }

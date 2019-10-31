@@ -1,1 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.39 147.15"><defs><style>.cls-1,.cls-2,.cls-3{fill:none;stroke:#231815;stroke-linecap:round;stroke-linejoin:round;}.cls-1{stroke-width:6.73px;}.cls-2{stroke-width:8.5px;}.cls-3{stroke-width:17.01px;}</style></defs><title>アセット 4512px</title><g id="レイヤー_2" data-name="レイヤー 2"><g id="レイヤー_1-2" data-name="レイヤー 1"><circle class="cls-1" cx="58.51" cy="58.51" r="55.14"/><line class="cls-2" x1="95.18" y1="96.94" x2="136.88" y2="138.65"/><line class="cls-3" x1="111.66" y1="113.43" x2="136.88" y2="138.65"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.39 147.15">
+  <defs>
+    <style>
+      .cls-1,
+      .cls-2,
+      .cls-3 {
+        fill: none;
+        stroke: #222222;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .cls-1 {
+        stroke-width: 6.73px;
+      }
+      .cls-2 {
+        stroke-width: 8.5px;
+      }
+      .cls-3 {
+        stroke-width: 17.01px;
+      }
+    </style>
+  </defs>
+  <title>アセット 4512px</title>
+  <g id="レイヤー_2" data-name="レイヤー 2">
+    <g id="レイヤー_1-2" data-name="レイヤー 1">
+      <circle class="cls-1" cx="58.51" cy="58.51" r="55.14"/>
+      <line class="cls-2" x1="95.18" y1="96.94" x2="136.88" y2="138.65"/>
+      <line class="cls-3" x1="111.66" y1="113.43" x2="136.88" y2="138.65"/>
+    </g>
+  </g>
+</svg>

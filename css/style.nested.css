@@ -48,7 +48,8 @@ a {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 100%; }
+        width: 100%;
+        letter-spacing: 0.1rem; }
         .header .header-content nav ul .nav-svg {
           float: left;
           display: block;
@@ -194,16 +195,16 @@ hr.dashed {
   display: block;
   margin: auto; }
   @media screen and (min-width: 360px) {
-    .service-contents .service-description .service-title {
+    .service-contents .service-description h2.service-title {
       font-size: 3rem;
       line-height: 4rem; } }
   @media screen and (min-width: 768px) {
-    .service-contents .service-description .service-title {
+    .service-contents .service-description h2.service-title {
       font-size: 3.8rem;
       line-height: 4.5rem;
       text-align: left; } }
   @media screen and (min-width: 1000px) {
-    .service-contents .service-description .service-title {
+    .service-contents .service-description h2.service-title {
       font-size: 4.7rem;
       line-height: 6rem;
       text-align: left; } }
@@ -521,3 +522,9 @@ hr.dashed {
       .section-more .more-wrapper .more-contents .more-text {
         font-size: 1rem;
         line-height: 1.5rem; } }
+
+/*footer*/
+footer {
+  background-color: #e7488a;
+  padding: 0.5rem;
+  color: #fff; }
