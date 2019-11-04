@@ -19,7 +19,7 @@ $breakpoints: (
 }
 @mixin lg-sub-title {
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  line-height: 2.8rem;
 }
 @mixin lg-text {
   font-size: 1rem;
@@ -40,8 +40,8 @@ $breakpoints: (
 }
 /*ベースの文字サイズsp*/
 @mixin sm-title {
-  font-size: 3rem;
-  line-height: 4rem;
+  font-size: 2.3rem;
+  line-height: 3.8rem;
 }
 @mixin sm-sub-title {
   font-size: 1.2rem;
@@ -80,10 +80,10 @@ a {
     right: 50%;
     transform: translateX(50%) translateY(-50%);
     a {
-      color: #fff;
+      color: #eee;
     }
     h1.logo {
-      color: #fff;
+      color: #eee;
       @include mq(sm) {
         font-size: 4rem;
         line-height: 4.5rem;
@@ -172,7 +172,7 @@ a {
 }
 
 hr.dashed {
-  background-color: #fff;
+  background-color: #eee;
   border-top: 2px dashed $theme-color;
 }
 
@@ -324,7 +324,7 @@ hr.dashed {
 /*section event*/
 .section-event {
   background: url("data:image/svg+xml;charset=utf-8,%3csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 2 2' preserveAspectRatio='none'%3e%3cg transform='matrix(0-1 1 0 0 2)'%3e%3cpath fill='%23e7488a' d='M-1-1v4h4v-4z'/%3e%3cpath fill='none' stroke='%23ffffff' stroke-width='.11' opacity='.02' d='M1-1-2 2M2-1l-4 4M3-1l-4 4M3 0l-4 4M3 1 1 3'/%3e%3c/g%3e%3c/svg%3e");
-  color: #ffffff;
+  color: #eee;
 }
 
 .event-wrapper {
@@ -356,7 +356,6 @@ hr.dashed {
     
 
     .event-visual img {
-      border-radius: 50%;
       margin-bottom: 1.5rem;
       @include mq(sm) {
         height: 15rem;
@@ -374,7 +373,7 @@ hr.dashed {
 
     .event-title {
       @include mq(sm) {
-        @include md-sub-title
+        @include sm-sub-title
       };
       @include mq(md) {
         @include md-sub-title
@@ -386,7 +385,7 @@ hr.dashed {
 
     .event-text {
       @include mq(sm) {
-        @include md-text
+        @include sm-text
       };
       @include mq(md) {
         @include md-text
@@ -434,7 +433,7 @@ hr.dashed {
       height: auto;
       margin: 20px;
       @include mq(sm) {
-        width: 60vw;
+        width: 70%;
       };
       @include mq(md) {
         width: 30vw;
@@ -446,7 +445,7 @@ hr.dashed {
 
     .web-title {
       @include mq(sm) {
-        @include md-sub-title
+        @include sm-sub-title
       };
       @include mq(md) {
         @include md-sub-title
@@ -460,7 +459,7 @@ hr.dashed {
       width: 70%;
       margin: auto;
       @include mq(sm) {
-        @include md-text
+        @include sm-text
       };
       @include mq(md) {
         @include md-text
@@ -474,7 +473,7 @@ hr.dashed {
 /*section special*/
 .section-special {
   background: url("data:image/svg+xml;charset=utf-8,%3csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 2 2' preserveAspectRatio='none'%3e%3cg transform='matrix(0-1 1 0 0 2)'%3e%3cpath fill='%23e7488a' d='M-1-1v4h4v-4z'/%3e%3cpath fill='none' stroke='%23ffffff' stroke-width='.11' opacity='.02' d='M1-1-2 2M2-1l-4 4M3-1l-4 4M3 0l-4 4M3 1 1 3'/%3e%3c/g%3e%3c/svg%3e");
-  color: #ffffff;
+  color: #eee;
   .special-more-wrapper{
     
         @include mq(sm) {
@@ -491,7 +490,7 @@ hr.dashed {
     width: 100%;
     .special-more {
       display: block;
-      background-color: #fafafa;
+      background-color: #eee;
       text-align: center;
       padding: 1rem;
       @include mq(sm) {
@@ -506,6 +505,10 @@ hr.dashed {
         width: 20%;
         margin: 2rem 0 2rem auto;
       };
+      &:hover{
+        transition: all 0.6s;
+        transform: scale(1.05,1.05);
+      }
 
       a {
           color: #333;
@@ -523,10 +526,11 @@ hr.dashed {
     flex-wrap: nowrap;
     justify-content: space-between;
     overflow-x: auto;
-    background-color: #fff;
+    background-color: #eee;
     color: #333;
     width: 100%;
     margin: auto;
+    padding: 1rem;
     filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.2));
 
     .special-contents {
@@ -592,18 +596,20 @@ hr.dashed {
 .section-more {
   .more-contents-top {
     border: dashed 1px $theme-color;
-    margin: 2rem;
     @include mq(sm) {
       @include sm-text
       padding: 1rem;
+      margin: 2rem 1rem;
     };
     @include mq(md) {
       @include md-text
       padding: 2.5rem;
+      margin: 2rem;
     };
     @include mq(lg) {
       @include lg-text
       padding: 2.5rem;
+      margin: 2rem;
     };
     position: relative;
   }
@@ -612,14 +618,32 @@ hr.dashed {
   .more-wrapper {
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
+    text-align: center;
     .more-contents {
-      width: 49%;
+      margin: 2rem auto;
+      @include mq(sm) {
+        width: 80%;
+      };
+      @include mq(md) {
+        width: 80%;
+      };
+      @include mq(lg) {
+        width: 47%;
+      };
 
       .more-visual img {
         margin-bottom: 1.5rem;
         height: auto;
-        width: 38vw;
+        @include mq(sm) {
+          width: 100%;
+        };
+        @include mq(md) {
+          width: 100%;
+        };
+        @include mq(lg) {
+          width: 38vw;
+        };
       }
 
       .more-title {
@@ -652,5 +676,5 @@ hr.dashed {
 footer{
   background-color: $theme-color;
   padding: 0.5rem;
-  color: #fff;
+  color: #eee;
 }
