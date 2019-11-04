@@ -32,7 +32,7 @@ $breakpoints: (
 }
 @mixin md-sub-title {
   font-size: 1.3rem;
-  line-height: 1.8rem;
+  line-height: 2.3rem;
 }
 @mixin md-text {
   font-size: 1.1rem;
@@ -45,7 +45,7 @@ $breakpoints: (
 }
 @mixin sm-sub-title {
   font-size: 1.2rem;
-  line-height: 1.7rem;
+  line-height: 3rem;
 }
 @mixin sm-text {
   font-size: 1rem;
@@ -168,7 +168,15 @@ a {
 .section {
   //margin: 6rem 0;
   //padding: 2rem 0;
-  padding: 10%;
+  @include mq(sm) {
+    padding: 5%;
+  };
+  @include mq(md) {
+    padding: 10%;
+  };
+  @include mq(lg) {
+    padding: 10%;
+  };
 }
 
 hr.dashed {
@@ -216,15 +224,16 @@ hr.dashed {
 }
 /*section service*/
 .service-contents {
-
   @include mq(sm) {
-    margin: 2rem;
+    margin: 2rem auto;
   };
   @include mq(md) {
+    margin: auto;
     display: flex;
     justify-content: space-between;
   };
   @include mq(lg) {
+    margin: auto;
     display: flex;
     justify-content: space-between;
 
@@ -405,8 +414,8 @@ hr.dashed {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 90%;
-  padding: 5% 5% 0;
+  width: 100%;
+  padding: 5%  0;
 
   .gray {
     background-color: #f0f0f0;
@@ -417,23 +426,27 @@ hr.dashed {
   }
 
   .web-contents {
-    padding: 2rem 0;
-    margin-bottom: 2%;
     @include mq(sm) {
-      width: 90%;
+      width: 95%;
+      padding: 0.5rem 0 1rem;
+      margin-bottom: 3%;
     };
     @include mq(md) {
       width: 48%;
+      padding: 2rem 0;
+      margin-bottom: 2%;
     };
     @include mq(lg) {
       width: 48%;
+      padding: 2rem 0;
+      margin-bottom: 2%;
     };
 
     .web-visual img {
       height: auto;
       margin: 20px;
       @include mq(sm) {
-        width: 70%;
+        width: 85%;
       };
       @include mq(md) {
         width: 30vw;
@@ -456,16 +469,18 @@ hr.dashed {
     }
 
     .web-text {
-      width: 70%;
       margin: auto;
       @include mq(sm) {
         @include sm-text
+        width: 85%;
       };
       @include mq(md) {
         @include md-text
+        width: 70%;
       };
       @include mq(lg) {
         @include lg-text
+        width: 70%;
       };
     }
   }
@@ -530,8 +545,6 @@ hr.dashed {
     color: #333;
     width: 100%;
     margin: auto;
-    padding: 1rem;
-    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.2));
 
     .special-contents {
       display: inline-block;
@@ -544,9 +557,10 @@ hr.dashed {
 
       .special-visual img {
         height: auto;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.1));
         @include mq(sm) {
           margin: 0.5rem;
-          width: 30vw;
+          width: 50vw;
         };
         @include mq(md) {
           margin: 1rem;
@@ -564,6 +578,7 @@ hr.dashed {
         .special-title {
           @include mq(sm) {
             @include sm-sub-title;
+            line-height: normal;
           };
           @include mq(md) {
             @include md-sub-title;
